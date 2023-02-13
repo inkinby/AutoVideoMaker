@@ -1,0 +1,68 @@
+Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)] on win32
+python-3.11.0-amd64.exe
+
+C:\python_pro\Testbytest\venv\Scripts\python.exe -m pip install --upgrade pip
+
+pip install matplotlib
+pip install moviepy
+pip install ffmpeg --upgrade
+pip install moviepy --upgrade
+
+ffmpeg.exe -version 
+2022-11-03-git-5ccd4d3060-full_build-www.gyan.dev Copyright (c) 2000-2022 the FFmpeg developers
+built with gcc 12.1.0 (Rev2, Built by MSYS2 project)
+
+ImageMagick-7.1.0-52-Q16-HDRI-x64-dll
+
+
+Рабочий pip list 
+Package            Version
+------------------ ---------
+certifi            2022.9.24
+charset-normalizer 2.1.1
+colorama           0.4.6
+contourpy          1.0.6
+cycler             0.11.0
+decorator          4.4.2
+ffmpeg             1.4
+fonttools          4.38.0
+idna               3.4
+imageio            2.22.4
+imageio-ffmpeg     0.4.7
+kiwisolver         1.4.4
+matplotlib         3.6.2
+moviepy            1.0.3
+numpy              1.23.4
+packaging          21.3
+Pillow             9.3.0
+pip                22.3.1
+proglog            0.1.10
+pyparsing          3.0.9
+python-dateutil    2.8.2
+requests           2.28.1
+setuptools         65.5.1
+six                1.16.0
+tqdm               4.64.1
+urllib3            1.26.12
+wheel              0.38.4
+
+
+4:30  x264  4 229 kb/s  ffmpeg_params=[]   
+2:47  x265  7 989 kb/s  preset='ultrafast', ffmpeg_params=['-vcodec', 'libx265', '-threads', '4', '-crf', '15'] 
+2:44  x265  2 058 kb/s  ffmpeg_params=['-vcodec', 'hevc_nvenc', '-threads', '4', '-crf', '15'])
+2:48  x264  2 073 kb/s  ffmpeg_params=['-vcodec', 'h264_nvenc', '-threads', '4', '-crf', '15']
+2:45  x264  2 030 kb/s  ffmpeg_params=['-vcodec', 'h264_nvenc', '-threads', '12', '-crf', '15']
+2:42  x264  2 005 kb/s  ffmpeg_params=['-vcodec', 'h264_nvenc', '-threads', '1', '-extra_hw_frames', '3', '-crf', '15']
+3:17  x265  10.4 Mb/s   ffmpeg_params=['-vcodec', 'hevc', '-threads', '1', '-extra_hw_frames', '3', '-crf', '15']
+2:45  x264  17.8 Mb/s   ffmpeg_params=['-threads', '2',  '-c:v', 'h264_nvenc', '-gpu:v', '0', '-cq:v', '21', '-rc:v', 'vbr', '-preset:v', 'fast']
+2:54  x264  10.3 Mb/s   ffmpeg_params=['-c:v', 'h264_nvenc', '-preset', 'llhq', '-rc', 'constqp', '-qp', '21']
+2:51  x264  6 958 kb/s  ffmpeg_params=['-c:v', 'h264_nvenc', '-preset', 'llhq', '-rc', 'constqp', '-qp', '21']   +   '-hwaccel', 'nvdec', '-hwaccel_output_format', 'cuda',
+2:55  x264  9 662 kb/s  ffmpeg_params=['-c:v', 'h264_nvenc', '-preset', 'llhq', '-rc', 'constqp', '-qp', '21']   +   '-hwaccel', 'cuvid', '-hwaccel_output_format', 'cuda',
+2:52  x264  2 010 kb/s  ffmpeg_params=['-c:v', 'h264_nvenc', '-preset', 'slow']  +  '-hwaccel', 'cuda', '-hwaccel_output_format', 'cuda',
+2:52  x264  1 921 kb/s  ffmpeg_params=['-c:v', 'h264_nvenc', '-preset', 'fast']  +  '-hwaccel_device', '0', '-hwaccel', 'cuda', 
+2:51  x264  4 892 kb/s  ffmpeg_params=['-c:v', 'h264_nvenc', '-preset', 'p6', '-tune', 'hq', '-b:v', '5M', '-bufsize', '5M', '-maxrate', '10M', '-qmin', '0', '-g', '250', '-bf', '3', '-b_ref_mode', 'middle', '-temporal-aq', '1', '-rc-lookahead', '20', '-i_qfactor', '0.75', '-b_qfactor', '1.1'])  + -y', '-vsync', '0', '-hwaccel', 'cuda', '-hwaccel_output_format', 'cuda', 
+OK  2:51  x264  16.8 Mb/s   ffmpeg_params=['-threads', '2',  '-c:v', 'h264_nvenc', '-gpu:v', '0', '-cq:v', '21', '-rc:v', 'vbr', '-preset:v', 'fast'] +  '-y', '-vsync', '0', '-hwaccel', 'cuda', '-hwaccel_output_format', 'cuda',
+2:52  x264  17.1 Mb/s   ffmpeg_params=['-c:v', 'h264_nvenc', '-gpu:v', '0', '-cq:v', '21', '-rc:v', 'vbr', '-preset:v', 'fast'] +  '-y', '-vsync', '0', '-threads', '4',  '-hwaccel', 'cuda', '-hwaccel_output_format', 'cuda',
+
+OK  2:55  x265  11.7 Mb/s   ffmpeg_params=['-c:v', 'hevc_nvenc', '-gpu:v', '0', '-cq:v', '21', '-rc:v', 'vbr', '-preset:v', 'fast'] + '-y', '-vsync', '0', '-threads', '4', '-hwaccel', 'cuda', '-hwaccel_output_format', 'cuda',
+
